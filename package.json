@@ -1,0 +1,30 @@
+{
+  "name": "flipkart-api",
+  "version": "1.0.0",
+  "description": "API for flipkart clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sakshi-Halge/flipkart-api.git"
+  },
+  "author": "Sakshi Halge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sakshi-Halge/flipkart-api/issues"
+  },
+  "homepage": "https://github.com/Sakshi-Halge/flipkart-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
