@@ -8,6 +8,7 @@ const main_cat_route = require('./routes/display_main');
 const sub_cat_route = require('./routes/display_sub');
 const shoppingData_route = require('./routes/shopping_data');
 const orders_route = require('./routes/place_order');
+const cart_route = require('./routes/cart_route');
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ app.use('/api/data', main_cat_route);
 app.use('/api/data', sub_cat_route);
 app.use('/api/data', shoppingData_route);
 app.use('/api/data', orders_route);
+app.use('/api/data', cart_route);
 
 
 app.listen(port_number, (err) => {
