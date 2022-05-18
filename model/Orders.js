@@ -1,52 +1,44 @@
 const mongoose = require("mongoose");
 
-const Orders_data = mongoose.Schema({
+const Orders_data = new mongoose.Schema({
   id: {
     type: Number,
     required: true,
   },
-  name: {
+  name: { type: String, required: true },
+  email: {
     type: String,
     required: true,
   },
-  sub_category: {
+  phone: {
     type: String,
     required: true,
   },
-  sub_category_id: {
+
+  productName: {
+    type: String,
+    required: true,
+  },
+  amount: {
+    type: Number,
+    // required: true,
+  },
+  address: {
+    type: String,
+    required: true,
+  },
+  status: {
+    type: String,
+    required: true,
+  },
+  productImg: {
+    type: String,
+    required: true,
+  },
+  quantity: {
     type: Number,
     required: true,
   },
-  main_category: {
-    type: String,
-    required: true,
-  },
-  main_id: {
-    type: Number,
-    required: true,
-  },
-  rating: {
-    type: String,
-    required: true,
-  },
-  price: {
-    type: Number,
-    required: true,
-  },
-  item_thumb: {
-    type: String,
-    required: true,
-  },
-  offer: {
-    type: Number,
-    required: true,
-  },
-  image_gallery: [
-    { type: String, required: true },
-    { type: String, required: true },
-    { type: String, required: true },
-    { type: String, required: true },
-  ],
 });
 
 module.exports = mongoose.model("orders", Orders_data);
